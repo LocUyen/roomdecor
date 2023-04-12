@@ -1,0 +1,401 @@
+version: "3.1"
+
+stories:
+- story: chao hoi
+  steps:
+  - action: utter_greet
+  - action: utter_cat
+
+- story: kim
+  steps:
+
+
+- story: danh mục cau hoi
+  steps:
+  - intent: return_ask_cat
+  - action: utter_cat
+
+# - story: default fallback
+#   steps:
+#   - intent: bot_challenge
+#   - action: action_custom_fallback
+
+
+- story: hoi size room
+  steps:
+  - intent: room_size
+  - action: utter_room_size
+
+- story: hoi size room 9m2
+  steps:
+  - intent: 9m2
+  - action: utter_cat_size_9
+
+- story: cho phong 9m
+  steps:
+  - intent: 9m2
+  - action: utter_cat_size_9
+
+- story: san dan cho phong 9m
+  steps:
+  - intent: wood_floor9
+  - action: utter_wood_floor9
+
+- story: san cuon cho phong 9m
+  steps:
+  - intent: carpet_floor9
+  - action: utter_carpet_floor9
+
+# - story: dan tuong cho phong 9m
+#   steps:
+#   - intent: wall_sticker9
+#   - action: utter_wall_sticker
+
+- story: room size9m2 path 4
+  steps:
+  - intent: wallpaper9
+  - action: utter_wallpaper9
+ 
+
+# - story: room size9m2 path 5
+#   steps:
+#   - intent: paint9
+#   - action: utter_paint
+#   - action: utter_paint_other 
+
+
+- story: hoi size room 12m2
+  steps:
+  - intent: 12m2
+  - action: utter_cat_size_12
+
+- story: room size12m2 path1
+  steps:
+  - intent: wood_floor12
+  - action: utter_wood_floor12
+
+- story: room size12m2 path 2
+  steps:
+  - intent: carpet_floor12
+  - action: utter_carpet_floor12
+  
+# - story: dan tuong cho phong 12m
+#   steps:
+#   - intent: wall_sticker12
+#   - action: utter_wall_sticker
+
+- story: room size12m2 path 4
+  steps:
+  - intent: wallpaper12
+  - action: utter_wallpaper12
+ 
+# - story: room size12m2 path 5
+#   steps:
+#   - intent: paint12
+#   - action: utter_paint
+#   - action: utter_paint_other 
+
+- story: hoi size room 15m2
+  steps:
+  - intent: 15m2
+  - action: utter_cat_size_15
+
+- story: room size15m2 path1
+  steps:
+  - intent: wood_floor15
+  - action: utter_wood_floor15
+
+- story: room size15m2 path 2
+  steps:
+  - intent: carpet_floor15
+  - action: utter_carpet_floor15
+  
+
+# - story: room size15m2 path 3
+#   steps:
+#   - intent: wall_sticker15
+#   - action: utter_wall_sticker
+
+- story: room size15m2 path 4
+  steps:
+  - intent: wallpaper15
+  - action: utter_wallpaper15
+ 
+
+# - story: room size15m2 path 5
+#   steps:
+#   - intent: paint15
+#   - action: utter_paint
+#   - action: utter_paint_other 
+
+- story: hoi size room 16m2
+  steps:
+  - intent: 16m2
+  - action: utter_cat_size_16
+
+- story: room size16m2 path1
+  steps:
+  - intent: wood_floor16
+  - action: utter_wood_floor16
+
+
+- story: room size16m2 path 2
+  steps:
+  - intent: carpet_floor16
+  - action: utter_carpet_floor16
+  
+
+# - story: room size16m2 path 3
+#   steps:
+#   - intent: wall_sticker16
+#   - action: utter_wall_sticker
+
+
+- story: room size16m2 path 4
+  steps:
+  - intent: wallpaper16
+  - action: utter_wallpaper16
+ 
+
+# - story: room size16m2 path 5
+#   steps:
+#   - intent: paint16
+#   - action: utter_paint
+#   - action: utter_paint_other 
+
+- story: hoi size room 18m2
+  steps:
+  - intent: 18m2
+  - action: utter_cat_size_18
+
+- story: room size18m2 path1
+  steps:
+  - intent: wood_floor18
+  - action: utter_wood_floor18
+
+- story: room size18m2 path 2
+  steps:
+  - intent: carpet_floor18
+  - action: utter_carpet_floor18
+  
+
+# - story: room size18m2 path 3
+#   steps:
+#   - intent: wall_sticker18
+#   - action: utter_wall_sticker
+
+
+- story: room size18m2 path 4
+  steps:
+  - intent: wallpaper18
+  - action: utter_wallpaper18
+ 
+
+# - story: room size18m2 path 5
+#   steps:
+#   - intent: paint18
+#   - action: utter_paint
+#   - action: utter_paint_other 
+
+- story: hoi size room 20m2
+  steps:
+  - intent: 20m2
+  - action: utter_cat_size_20
+
+- story: room size20m2 path1
+  steps:
+  - intent: wood_floor20
+  - action: utter_wood_floor20
+
+- story: room size20m2 path 2
+  steps:
+  - intent: carpet_floor20
+  - action: utter_carpet_floor20
+  
+
+# - story: room size20m2 path 3
+#   steps:
+#   - intent: wall_sticker20
+#   - action: utter_wall_sticker
+
+
+- story: room size20m2 path 4
+  steps:
+  - intent: wallpaper20
+  - action: utter_wallpaper20
+ 
+
+# - story: room size20m2 path 5
+#   steps:
+#   - intent: paint20
+#   - action: utter_paint
+#   - action: utter_paint_other 
+
+- story: hoi size room 25m2
+  steps:
+  - intent: 25m2
+  - action: utter_cat_size_25
+
+- story: room size25m2 path1
+  steps:
+  - intent: wood_floor25
+  - action: utter_wood_floor25
+
+
+- story: room size25m2 path 2
+  steps:
+  - intent: carpet_floor25
+  - action: utter_carpet_floor25
+  
+
+# - story: room size25m2 path 3
+#   steps:
+#   - intent: wall_sticker25
+#   - action: utter_wall_sticker
+ 
+
+- story: room size25m2 path 4
+  steps:
+  - intent: wallpaper25
+  - action: utter_wallpaper25
+ 
+
+# - story: room size25m2 path 5
+#   steps:
+#   - intent: paint25
+#   - action: utter_paint
+#   - action: utter_paint_other    
+
+- story: hoi size room 
+  steps:
+  - intent: room_size_orther
+  - action: utter_room_size_orther
+
+- story: room size path1
+  steps:
+  - intent: wood_floor
+  - action: utter_wood_floor
+
+
+- story: room size path 2
+  steps:
+  - intent: carpet_floor
+  - action: utter_carpet_floor
+  
+
+- story: room size path 3
+  steps:
+  - intent: wall_sticker
+  - action: utter_wall_sticker
+ 
+
+- story: room size path 4
+  steps:
+  - intent: wallpaper
+  - action: utter_wallpaper
+ 
+
+- story: room size path 5
+  steps:
+  - intent: paint
+  - action: utter_paint
+  - action: utter_paint_other    
+
+- story: hoi phong thuy 1
+  steps:
+  - intent: fengshui_color
+  - action: utter_fengshui_color
+
+- story: kim
+  steps:
+  - intent: fengshui_metal
+  - action: action_fengshui_metal
+
+- story: moc
+  steps:
+  - intent: fengshui_carpentry
+  - action: action_fengshui_carpentry
+
+- story: thuy
+  steps:
+  - intent: fengshui_water
+  - action: action_fengshui_water
+
+- story: hoa
+  steps:
+  - intent: fengshui_fire
+  - action: action_fengshui_fire
+
+- story: tho
+  steps:
+  - intent: fengshui_earth
+  - action: action_fengshui_earth
+#tip
+- story: hoi tip
+  steps:
+  - intent: tip_decor
+  - action: utter_tip_decor
+ 
+- story: hoi tip dan san
+  steps:
+  - intent: tip_wood_floor
+  - action: action_tip_carpet_floor
+ 
+- story: hoi tip dan san cuon
+  steps:
+  - intent: tip_carpet_floor
+  - action: action_tip_carpet_floor
+ 
+- story: hoi tip mieng dan tuong
+  steps:
+  - intent: tip_wall_sticker
+  - action: action_tip_wall_sticker
+ 
+- story: hoi tip giay dan tuong
+  steps:
+  - intent: tip_wallpaper
+  - action: action_tip_wallpaper
+ 
+- story: hoi tip anh sang
+  steps:
+  - intent: tip_light
+  - action: action_tip_light
+
+- story: hoi nhom decor
+  steps:
+  - intent: love_decor
+  - action: action_love_decor1
+  - action: action_love_decor2
+  - action: action_love_decor3
+
+- story: thankyou
+  steps:
+  - intent: thankyou
+  - action: utter_thankyou
+
+- story: praise 
+  steps:
+  - intent: praise  
+  - action: utter_praise
+ 
+- story: decry 
+  steps:
+  - intent: decry  
+  - action: utter_decry
+ 
+- story: address 
+  steps:
+  - intent: address  
+  - action: utter_address
+  
+- story: ship 
+  steps:
+  - intent: ship  
+  - action: utter_ship
+  
+- story: product 
+  steps:
+  - intent: product  
+  - action: utter_product
+  
+

@@ -1,0 +1,265 @@
+/*HEADER*/
+/* #header-wp{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    z-index: 10;
+} */
+#head-top{ 
+    background: #FAFAFA;
+    border-bottom: 1px solid #dddd;
+    
+}
+#head-top #main-menu ul{ 
+    float: left;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#head-top #main-menu li{ float: left;}
+#head-top #payment-link{
+    position: relative;
+    display: block;
+    color: #000;
+    padding: 10px 0px 10px 20px;
+}
+#head-top #payment-link:before{
+    position: absolute;
+    content: '\f0c1';
+    font-family: 'FontAwesome';
+    top: 10px;
+    left: 0;
+}
+#head-top #main-menu li a, .dropbtn{
+    display: block;
+    color: #000;
+    padding: 10px 15px;
+}
+#head-top #main-menu li a:hover{
+    color: #563913
+    
+}
+#head-top #main-menu li:last-child a{ padding-right: 0!important; }
+/* .dropdown:hover .dropbtn {
+    
+  } */
+  
+  li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    /* background-color: #f9f9f9; */
+    border-top: 3px solid #563913;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 10;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    background-color: white;
+    padding: 12px 16px;
+    border-bottom: 1px solid #dddd;
+
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    z-index: 10;
+
+  }
+  
+  .dropdown-content a:hover {
+    color: #000 !important;
+    background: #fafafa;
+    border: 1px solid #000;
+    z-index: 10;
+
+}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+    
+  }
+#head-body{ 
+    background: #FAFAFA;
+    border-bottom: 1px solid #dddd;
+    /* position: fixed; */
+
+}
+#head-body #logo{
+    display: block;
+    text-transform: uppercase;
+    font-family: 'Roboto Medium';
+    color: #FAFAFA;
+    padding: 13px 0px;
+}
+
+#head-body #search-wp{ padding: 22px 0px 22px 195px;}
+#head-body #search-wp #s{
+    display: inline-block;
+    width: 400px;
+    border: none;
+    outline: none;
+    padding: 8px 20px;
+    line-height: normal;
+    border: 1px solid rgb(56, 55, 55);
+}
+#head-body #search-wp #sm-s{
+    position: relative;
+    left: -4px;
+    display: inline-block;
+    border: none;
+    outline: none;
+    background: #111111;
+    color: #fff;
+    padding: 10px 20px;
+    line-height: 13px;
+    font-size: 13px;
+    border: 1px solid black;
+   
+}
+#head-body #search-wp #sm-s:hover{ 
+    background: #fff;
+    color: #000;
+}
+#advisory-wp{
+    position: relative;
+    padding: 15px 30px 15px 50px;
+}
+#advisory-wp:before{
+    position: absolute;
+    content: '\f2a0';
+    font-family: 'FontAwesome';
+    top: 50%;
+    left: 0px;
+    font-size: 21px;
+    color: #000;
+    width: 38px;
+    height: 38px;
+    line-height: 35px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    text-align: center;
+    transform: translateY(-50%);
+}
+#advisory-wp:after{
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 50%;
+    background: #FAFAFA;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+#advisory-wp span{
+    position: relative;
+    display: block;
+    color: #000;
+}
+#advisory-wp .title{ font-size: 15px;}
+#advisory-wp .phone{ font-family: 'Roboto Bold'; font-size: 16px;}
+#cart-wp, #cart-respon-wp{
+    position: relative;
+    display: block;
+    color: #000;
+    padding: 20px 0px 20px 30px;
+}
+#cart-wp i, #cart-respon-wp i{
+    font-size: 20px;
+    width: 37px;
+    height: 37px;
+    line-height: 33px;
+    text-align: center;
+    border: 2px solid #000;
+    border-radius: 50%;
+}
+#cart-wp #num, #cart-respon-wp #num{
+    position: absolute;
+    top: 10px;
+    left: 65px;
+    font-size: 16px;
+    font-family: 'Roboto Medium';
+}
+#cart-respon-wp{ display: none;}
+#cart-wp{ position: relative; cursor: pointer;}
+#cart-wp #dropdown{
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 90px;
+    right: 0;
+    width: 250px;
+    min-height: 250px;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #e1e1e1;
+    /* box-shadow: #333; */
+    transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    z-index: 1000;
+}
+#cart-wp:hover #dropdown{
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+}
+#cart-wp .list-cart{ margin-bottom: 15px;}
+#cart-wp .list-cart li{
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #ddd;
+}
+#cart-wp .list-cart li:last-child{ 
+    margin-bottom: 0!important; 
+    border-bottom: none; 
+    padding-bottom: 0!important;
+}
+#cart-wp .list-cart .thumb{ width: 25%;}
+#cart-wp .list-cart .info{ width: 75%; padding-left: 15px;}
+#cart-wp #dropdown .desc{ margin-bottom: 15px; color: #333;}
+#cart-wp #dropdown .desc span{ color: #d9263c; font-family: 'Roboto Medium';}
+#cart-wp #dropdown .list-cart .info .product-name{
+    display: block;
+    font-size: 13px;
+    color: #333;
+}
+#cart-wp #dropdown .list-cart .info .price{
+    display: block;
+    font-family: 'Roboto Medium';
+    font-size: 15px;
+    color: #333;
+}
+#cart-wp #dropdown .list-cart .info .qty{
+    display: block;
+    font-size: 13px;
+    font-family: 'Roboto Light';
+    color: #999;
+}
+#cart-wp #dropdown .total-price{
+    text-transform: uppercase;
+    font-family: 'Roboto Medium';
+    font-size: 15px;
+    margin-bottom: 15px;
+    color: #000;
+    line-height: normal;
+}
+#cart-wp #dropdown .action-cart a{
+    display: block;
+    padding: 5px 20px;
+    font-family: 'Roboto Bold';
+    text-transform: uppercase;
+    font-size: 12px;
+}
+#cart-wp #dropdown .action-cart a.view-cart{ color: #000; border: 1px solid #000;}
+#cart-wp #dropdown .action-cart a.checkout{color: #000; border: 1px solid #000;background: #fafafa;}
+#cart-wp #dropdown .action-cart a.view-cart:hover{ background: #000;color: #fff;}
+#cart-wp #dropdown .action-cart a.checkout:hover{ background: #000;color: #fff; }

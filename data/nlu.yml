@@ -1,0 +1,545 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - chào
+    - xin chào
+    - chào bạn
+    - chào shop
+    - cho hỏi cái
+    - cho mình hỏi
+    - cho tui hỏi
+    - shop cho hỏi
+    - shop cho tui hỏi
+- intent: out_of_scope
+  examples: |
+    - Xin chào Uyển
+    - Hello Lộc Uyển
+    - shop phải con người không   
+    
+- intent: shop_challenge
+  examples: |
+    - shop nói được tiếng anh không
+    - Sản phẩm này ráp làm sao
+    - shop qua trang trí nhà giúp tôi đi   
+#roomsize
+- intent: room_size
+  examples: |
+    - Cách đo kích thước phòng cho sàn, sơn, giấy dán
+
+- intent: 9m2
+  examples: |
+    - 9m2
+    - kích thước phòng 9m2
+    - phòng 9m2
+    - rộng 9m2
+    - diện tích 9m2
+
+- intent: 12m2
+  examples: |
+    - 12m2
+    - kích thước phòng 12m2
+    - phòng 12m2
+    - rộng 12m2
+    - diện tích 12m2
+
+- intent: 15m2
+  examples: |
+    - 15m2
+    - kích thước phòng 15m2
+    - phòng 15m2
+    - rộng 15m2
+    - diện tích 15m2
+
+- intent: 16m2
+  examples: |
+    - 16m2
+    - kích thước phòng 16m2
+    - phòng 16m2
+    - rộng 16m2
+    - diện tích 16m2
+
+- intent: 18m2
+  examples: |
+    - 18m2
+    - kích thước phòng 18m2
+    - phòng 18m2
+    - rộng 18m2
+    - diện tích 18m2
+
+- intent: 20m2
+  examples: |
+    - 20m2
+    - kích thước phòng 20m2
+    - phòng 20m2
+    - rộng 20m2
+    - diện tích 20m2
+
+- intent: 25m2
+  examples: |
+    - 25m2
+    - kích thước phòng 25m2
+    - phòng 25m2
+    - rộng 25m2
+    - diện tích 25m2
+
+- intent: room_size_orther
+  examples: |
+    - Kích thước khác
+    - Không có trong đây
+    - Khác
+
+- intent: wood_floor9
+  examples: |
+    - Miếng dán sàn giả gỗ cho phòng 9m2
+
+- intent: carpet_floor9
+  examples: |
+    - Sàn nhựa cuộn cho phòng 9m2
+
+# - intent: wall_sticker9
+#   examples: |
+#     - Miếng dán tường cho phòng 9m2
+
+- intent: wallpaper9
+  examples: |
+    - Giấy dán tường 10m cho phòng 9m2
+
+# - intent: paint
+#   examples: |
+#     - Nước sơn cho phòng 9m2
+
+- intent: wood_floor12
+  examples: |
+    - Miếng dán sàn giả gỗ cho phòng 12m2
+
+- intent: carpet_floor12
+  examples: |
+    - Sàn nhựa cuộn cho phòng 12m2
+
+# - intent: wall_sticker12
+#   examples: |
+#     - Miếng dán tường cho phòng 12m2
+
+- intent: wallpaper12
+  examples: |
+    - Giấy dán tường 10m cho phòng 12m2
+
+# - intent: paint12
+#   examples: |
+#     - Nước sơn cho phòng 12m2
+
+- intent: wood_floor15
+  examples: |
+    - Miếng dán sàn giả gỗ cho phòng 15m2
+
+- intent: carpet_floor15
+  examples: |
+    - Sàn nhựa cuộn cho phòng 15m2
+
+# - intent: wall_sticker15
+#   examples: |
+#     - Miếng dán tường cho phòng 15m2
+
+- intent: wallpaper15
+  examples: |
+    - Giấy dán tường 10m cho phòng 15m2
+
+# - intent: paint15
+#   examples: |
+#     - Nước sơn cho phòng 15m2
+
+- intent: wood_floor16
+  examples: |
+    - Miếng dán sàn giả gỗ cho phòng 16m2
+
+- intent: carpet_floor16
+  examples: |
+    - Sàn nhựa cuộn cho phòng 16m2
+
+# - intent: wall_sticker16
+#   examples: |
+#     - Miếng dán tường cho phòng 16m2
+
+- intent: wallpaper16
+  examples: |
+    - Giấy dán tường 10m cho phòng 16m2
+
+# - intent: paint16
+#   examples: |
+#     - Nước sơn cho phòng 16m2
+
+- intent: wood_floor18
+  examples: |
+    - Miếng dán sàn giả gỗ cho phòng 18m2
+
+- intent: carpet_floor18
+  examples: |
+    - Sàn nhựa cuộn cho phòng 18m2
+
+# - intent: wall_sticker18
+#   examples: |
+#     - Miếng dán tường cho phòng 18m2
+
+- intent: wallpaper18
+  examples: |
+    - Giấy dán tường 10m cho phòng 18m2
+
+# - intent: paint18
+#   examples: |
+#     - Nước sơn cho phòng 18m2
+
+- intent: wood_floor20
+  examples: |
+    - Miếng dán sàn giả gỗ cho phòng 20m2
+
+- intent: carpet_floor20
+  examples: |
+    - Sàn nhựa cuộn cho phòng 20m2
+
+# - intent: wall_sticker20
+#   examples: |
+#     - Miếng dán tường cho phòng 20m2
+
+- intent: wallpaper20
+  examples: |
+    - Giấy dán tường 10m cho phòng 20m2
+
+# - intent: paint20
+#   examples: |
+#     - Nước sơn cho phòng 20m2
+
+- intent: wood_floor25
+  examples: |
+    - Miếng dán sàn giả gỗ cho phòng 25m2
+
+- intent: carpet_floor25
+  examples: |
+    - Sàn nhựa cuộn cho phòng 25m2
+
+# - intent: wall_sticker25
+#   examples: |
+#     - Miếng dán tường cho phòng 25m2
+
+- intent: wallpaper25
+  examples: |
+    - Giấy dán tường 10m cho phòng 25m2
+
+- intent: wood_floor
+  examples: |
+    - Dán sàn giả gỗ 
+    - Dán sàn
+
+- intent: carpet_floor
+  examples: |
+    - Sàn nhựa cuộn
+    - Sàn cuộn
+
+- intent: wall_sticker
+  examples: |
+    - Miếng dán tường
+    - Xốp dán tường
+    - Miếng dán tường thì sao
+    - Xốp dán tường thì sao
+    - Mua bao nhiêu miếng dán tường
+    - Miếng dán tường cho phòng 9m2
+    - Miếng dán tường cho phòng 12m2
+    - Miếng dán tường cho phòng 15m2
+    - Miếng dán tường cho phòng 16m2
+    - Miếng dán tường cho phòng 18m2
+    - Miếng dán tường cho phòng 25m2
+    
+
+- intent: wallpaper
+  examples: |
+    - Giấy dán tường 
+    - Giấy dán
+    - Mua bao nhiêu giấy dán tường
+    
+
+- intent: paint
+  examples: |
+    - Nước sơn 
+    - Sơn
+    - Mua bao nhiêu thùng sơn
+    - Các loại sơn thế nào
+    - Nước sơn cho phòng 9m2
+    - Nước sơn cho phòng 12m2
+    - Nước sơn cho phòng 15m2
+    - Nước sơn cho phòng 16m2
+    - Nước sơn cho phòng 18m2
+    - Nước sơn cho phòng 25m2
+
+#tip
+- intent: tip_decor
+  examples: |
+    - Mẹo cải tạo và decor phòng
+    - Mẹo cải tạo
+    - Mẹo decor
+    - Mẹo sửa phòng
+    - Mẹo trang trí
+
+- intent: tip_wood_floor
+  examples: |
+    - Dán sàn không bị lệch 
+    
+ 
+- intent: tip_carpet_floor
+  examples: |
+    - Sàn nhựa cuộn có đổ keo
+
+
+- intent: tip_wall_sticker
+  examples: |
+    - Miếng dán tường không lệch
+
+- intent: tip_wallpaper
+  examples: |
+    - Giấy dán tường không bị phồng
+
+- intent: tip_light
+  examples: |
+    - Ánh sáng cho phòng
+    - Ánh sáng
+    - Làm sao cho phòng sáng sủa
+    - Làm cho phòng chill
+    - Đi đèn không nhàm chán
+    - Sử dụng đèn cho phòng
+  
+
+- intent: fengshui_color
+  examples: |
+    - Màu hợp phong thủy cho phòng
+
+- intent: fengshui_metal
+  examples: | 
+    - Kim
+    - Mệnh kim
+    - Mệnh kim cho phòng
+    - Mệnh kim nên decor màu gì
+    - Mệnh kim hợp màu gì
+
+- intent: fengshui_earth
+  examples: | 
+    - Thổ
+    - Mệnh thổ
+    - Mệnh thổ cho phòng
+    - Mệnh thổ nên decor màu gì
+    - Mệnh thổ hợp màu gì
+
+- intent: fengshui_water
+  examples: | 
+    - Thủy
+    - Mệnh thủy
+    - Mệnh thủy cho phòng
+    - Mệnh thủy nên decor màu gì
+    - Mệnh thủy hợp màu gì
+
+- intent: fengshui_carpentry
+  examples: | 
+    - Mộc
+    - Mệnh mộc
+    - Mệnh mộc cho phòng
+    - Mệnh mộc nên decor màu gì
+    - Mệnh mộc hợp màu gì
+
+- intent: fengshui_fire
+  examples: | 
+    - Hỏa
+    - Mệnh hỏa
+    - Mệnh hỏa cho phòng
+    - Mệnh hỏa nên decor màu gì
+    - Mệnh hỏa hợp màu gì
+
+- intent: love_decor
+  examples: |
+    - Hội nhóm đam mê decor
+
+- intent: return_ask_cat
+  examples: |
+    - .
+    - danh mục
+
+#hoi thong thuong
+- intent: decry    
+  examples: |
+    - shop gởm
+    - shop gì mà hỏi gì cũng không biết
+    - shop gà
+    - shop đùa à
+    - mày đùa à
+    - shop chán
+    - shop chậm tiêu thế
+    - shop ngu
+
+
+- intent: address
+  examples: |
+    - địa chỉ shop ở đâu
+    - shop ở đâu
+    - địa chỉ shop
+    - địa chỉ
+    - nhà shop ở đâu
+    - shop có chi nhánh không
+    - số nhà shop ở đâu
+    - địa chỉ cửa hàng ở đâu
+    - xin địa chỉ
+    - xin địa chỉ cửa hàng đi
+    - cho mình hỏi địa chỉ cửa hàng
+    - xin địa chỉ shop
+
+- intent: ship
+  examples: |
+    - phí ship bao nhiêu
+    - ship
+    - tiền ship
+    - phí ship bao nhiêu vậy shop
+    - tiền ship bao nhiêu
+    - tiền giao hàng bao nhiêu
+    - tiền ship nhiêu thế shop
+    - cho mình hỏi ship bao nhiêu tiền thế
+    - giao hàng nhiêu tiền thế
+    - tiền giao hàng mất bao nhiêu
+
+- intent: goodbye
+  examples: |
+    - tạm biệt
+    - bye
+    - hẹn gặp lại
+    - lần sau gặp
+    - bye shop
+    - tạm biệt bạn
+    - lần sau hỏi tiếp
+    - có gì cần tui hỏi lại
+    - bye shop
+
+- intent: thankyou
+  examples: |
+    - cảm ơn shop
+    - thankyou shop
+    - thankyou shop
+    - cảm ơn nhiều lắm
+    - cảm ơn bạn nhiều lắm
+    - cảm ơn nhiều
+
+- intent: praise   
+  examples: |
+    - shop dễ thương quá
+    - shop xịn quá
+    - shop cưng quá 
+    - shop giỏi quá
+    - shop hay quá
+    - shop biết nhiều quá
+    - shop thật hay người vậy
+
+- intent: product
+  examples: | 
+    - sản phẩm
+    - loại sản phẩm
+    - sản phẩm này
+    - loại này
+    - có sản phẩm này ko shop
+    - loại này nhiêu tiền
+# - intent: decor_experience_newbie
+#   examples: | 
+#     - hướng dẫn mình kinh nghiệm decor phòng đi
+#     - kinh nghiệm decor phòng
+#     - kinh nghiệm decor cho người mới
+#     - kinh nghiệm decor phòng
+#     - decor cho người mới
+
+# - intent: decor_sample_newbie
+#   examples: | 
+#     - mẫu decor phòng
+#     - mẫu decor
+#     - mẫu phòng
+#     - các thiết kế phòng
+#     - các hình decor phòng
+#     - mẫu
+#     - xin mẫu decor phòng đi shop
+#     - cho mình xem mẫu decor phòng đi
+#     - cho mình xem mẫu decor phòng đi shop
+#     - shop cho mình xem mẫu decor phòng đi
+#     - shop cho xin mẫu decor phòng
+#     - shop xem mẫu decor đi
+
+# - intent: pages_decor_fb
+#   examples: | 
+#     - shop có mấy page về decor không
+#     - page về decor
+#     - nơi decor
+#     - page decor
+#     - chỗ hỏi về decor
+#     - có trang fb nào nói về decor không
+
+# - intent: floor_tips
+#   examples: | 
+#     - xin mẹo dán dàn
+#     - mẹo dán sàn
+#     - cách dán sàn
+#     - shop cho hỏi mẹo dán sàn đi
+#     - shop cho xin mẹo dán sàn
+#     - mẹo dán sàn sao shop
+#     - dán sàn sao shop
+#     - chỉ cách dán sàn đi shop
+#     - hướng dẫn mình cách dán sàn đi
+#     - cho tôi hỏi mẹo dán sàn
+#     - cho mình hỏi cách dán sàn
+#     - tôi chưa biết cách dán sàn
+#     - tôi sán dàn bị xéo rồi
+#     - có cách nào dán sàn nhanh không
+#     - có cách nào dán sàn dễ không
+
+# - intent: paint_tips
+#   examples: | 
+#     - xin mẹo sơn phòng
+#     - mẹo sơn phòng
+#     - cách sơn phòng
+#     - shop cho hỏi mẹo sơn phòng đi
+#     - shop cho xin mẹo sơn phòng
+#     - mẹo sơn phòng sao shop
+#     - sơn phòng sao shop
+#     - chỉ cách sơn phòng đi shop
+#     - hướng dẫn mình cách sơn phòng đi
+#     - cho tôi hỏi mẹo sơn phòng
+#     - cho mình hỏi cách sơn phòng
+#     - tôi chưa biết cách sơn phòng
+#     - tôi sơn phòng bị bở rồi
+#     - có cách nào sơn phòng nhanh không
+#     - có cách nào sơn phòng dễ không
+#     - màu sơn rớt xuống sàn rồi
+#     - cách vệ sinh sơn khi rớt xuống sàn
+#     - sàn dính sơn phải làm sao
+#     - sàn dính sơn cách rửa
+
+# - intent: wall_tips
+#   examples: | 
+#     - xin mẹo dán tường
+#     - mẹo dán tường
+#     - cách dán tường
+#     - shop cho hỏi mẹo dán tường đi
+#     - shop cho xin mẹo dán tường
+#     - mẹo dán tường sao shop
+#     - dán tường sao shop
+#     - chỉ cách dán tường đi shop
+#     - hướng dẫn mình cách dán tường đi
+#     - cho tôi hỏi mẹo dán tường
+#     - cho mình hỏi cách dán tường
+#     - tôi chưa biết cách dán tường
+#     - tôi sán tường bị xéo rồi
+#     - có cách nào dán tường nhanh không
+#     - có cách nào dán tường dễ không
+#     - dán tường bị phồng
+#     - dán tường xấu
+#     - dán tường bị lỗ
+#     - dán tường dính bọt khí
+#     - shop ơi mình dán tường bị phồng
+
+
+
+
+

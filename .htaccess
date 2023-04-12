@@ -1,0 +1,6 @@
+RewriteEngine On
+
+
+RewriteRule "^([a-zA-Z0-9_-]+).html$" "?mod=home&action=index"
+
+RewriteRule "([a-zA-Z0-9_-]+).html$" "?mod=page&controller=index&action=contact"

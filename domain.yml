@@ -1,0 +1,544 @@
+version: "3.1"
+
+intents:
+  - greet
+  - room_size
+  - love_decor
+  - love_decor1
+  - love_decor2
+  - love_decor3
+  - 9m2
+  - 12m2
+  - 15m2
+  - 16m2
+  - 18m2
+  - 20m2
+  - 25m2
+  - room_size_orther
+  - wood_floor9
+  - carpet_floor9
+  - wallpaper9
+  - wood_floor12
+  - carpet_floor12
+  - wallpaper12
+  - wood_floor15
+  - carpet_floor15
+  - wallpaper15
+  - wood_floor16
+  - carpet_floor16
+  - wallpaper16
+  - wood_floor18
+  - carpet_floor18
+  - wallpaper18
+  - wood_floor20
+  - carpet_floor20
+  - wallpaper20
+  - wood_floor25
+  - carpet_floor25
+  - wallpaper25
+  - wood_floor
+  - carpet_floor
+  - wall_sticker
+  - wallpaper
+  - paint
+  - fengshui_color
+  - return_ask_cat
+  - fengshui_metal
+  - fengshui_earth
+  - fengshui_water
+  - fengshui_carpentry
+  - fengshui_fire
+  - tip_decor
+  - tip_wood_floor
+  - tip_carpet_floor
+  - tip_wall_sticker
+  - tip_wallpaper
+  - tip_light
+  - ship
+  - address
+  - decry
+  - praise
+  - goodbye
+  - thankyou
+  - product
+  - out_of_scope
+  # - bot_challenge
+
+responses:
+  utter_greet:
+  - text: "Xin chào quý khách ạ"
+
+  utter_out_of_scope:
+  - text: "Xin lỗi shop không hiểu bạn đang nói gì, vui lòng nhập từ khác"
+
+  utter_default:
+  - text: "Xin lỗi, shop không hiểu ý bạn. Vui lòng nhập cái khác hoặc nhập (danh mục) để hỏi theo chủ đề"
+  
+  utter_custom:
+  - text: "Xin lỗi, shop không hiểu ý bạn. Vui lòng nhập cái khác hoặc nhập (danh mục) để hỏi theo chủ đề"
+
+  utter_praise:
+  - text: "Cảm ơn ạ, shop thích được khen lắm"
+
+  utter_thankyou:
+  - text: "Không có gì ạ!"
+
+  utter_goodbye:
+  - text: "Tạm biệt! shop thích nói chuyện với khách lắm, nhớ kiếm tui nha"
+ 
+  utter_decry:
+  - text: "shop xin lỗi ạ, khách vui lòng liên hệ với chủ mình qua roomdecor520gmail.com"
+ 
+  utter_address:
+  - text: "182 Nguyễn Bỉnh Khiêm,TP Rạch Gía, Kiên Giang. Ngã tư ngay đèn xanh đèn đỏ nhìn đầu đường là thấy rồi"
+ 
+  utter_ship:
+  - text: "Toàn quốc 30k, trên 300k free ship, đặt tại địa phương thì chở free lắp free luôn"
+  - text: "Đặt trên 300 nghìn free ship, ship tỉnh thì 30 nghìn ạ"
+ 
+  utter_product:
+  - text: "Web cửa hàng đã lên chi tiết sản phẩm, quý khách có thể tự tham khảo ạ!"
+ 
+  utter_cat:
+  - text: "shop trả lời chính xác các danh mục dưới đây thôi, các câu hỏi khác có thể trả lời không chính xác.
+  Hãy gõ (danh mục) khi muốn danh mục xuất hiện"
+    buttons:
+    - title: "Cách đo kích thước phòng cho sàn, sơn, giấy dán"
+      payload: "/room_size"
+    - title: "Mẹo cải tạo và decor phòng"
+      payload: "/tip_decor"
+    - title: "Màu hợp phong thủy cho phòng"
+      payload: "/fengshui_color"
+    - title: "Hội nhóm đam mê decor"
+      payload: "/love_decor"
+
+  utter_room_size:
+  - text: "Phòng bao nhiêu mét vuông ạ:"
+    buttons:
+    - title: "9m2"
+      payload: "/9m2"
+    - title: "12m2"
+      payload: "/12m2"
+    - title: "15m2"
+      payload: "/15m2"
+    - title: "16m2"
+      payload: "/16m2"
+    - title: "18m2"
+      payload: "/18m2"
+    - title: "20m2"
+      payload: "/20m2"
+    - title: "25m2"
+      payload: "/25m2"
+    - title: "Kích thước khác"
+      payload: "/room_size_orther"
+
+  utter_cat_size_9:
+  - text: "Chọn loại"
+    buttons:
+    - title: "Miếng dán sàn giả gỗ cho phòng 9m2"
+      payload: "/wood_floor9"
+    - title: "Sàn nhựa cuộn cho phòng 9m2"
+      payload: "/carpet_floor9"
+    - title: "Miếng dán tường cho phòng 9m2"
+      payload: "/wall_sticker"
+    - title: "Giấy dán tường 10m cho phòng 9m2"
+      payload: "/wallpaper9"
+    - title: "Nước sơn cho phòng 9m2"
+      payload: "/paint"
+      
+  utter_wood_floor9:
+  - text: "Kích thước 91.4cmx15.2cm mỗi tấm, 1m2 = 7 tấm, khách nên mua 70 tấm, shop đã trừ hao luôn lỗi khi thi công cho khách"
+    image: "https://hthsaigon.com/wp-content/uploads/2022/05/san-nhua-tu-dinh-w36-300x300.jpg"
+    
+  utter_carpet_floor9:
+  - text: "Kích thước 1mx10m, khách nên mua 1 cuộn, sẵn tiện trừ hao khi bị lỗi"
+    image: "https://sango.us/sites/default/files/u10/mau-san-nhua-cuon.jpg"
+
+  # utter_wall_sticker9:
+  # - text: "Kích thước mỗi tấm: 70cmx77cm = 0,54m2. Đo diện tích bề mặt tường cần dán rồi chia cho 0,54 rồi cộng thêm 1-2 tấm là ra số tấm xốp cần mua"
+  #   image: "https://xopdantuongnnd.com/wp-content/uploads/2017/08/dan-lan-luot-cac-tam-xop-dan-tuong.jpg"
+
+  utter_wallpaper9:
+  - text: "Kích thước mỗi cuộn: 45cmx10m = 4,5m2. Đo diện tích bề mặt tường cần dán rồi chia cho 4,5. vd:Phòng 9m2 rộng 3m2 cao 4m thì diện tích là 48m2/4.5=10,6 thì mua 11 cuộn"
+    image: "https://xopdantuongnnd.com/wp-content/uploads/2017/08/dan-lan-luot-cac-tam-xop-dan-tuong.jpg"
+
+  # utter_paint9:
+  # - text: "Nếu ở trọ nên sơn 2 lớp sơn mịn là được, còn phòng ở nhà thì nên 1 lớp sơn lót, 2 lớp sơn mịn"
+
+  utter_cat_size_12:
+  - text: "Chọn loại"
+    buttons:
+    - title: "Miếng dán sàn giả gỗ cho phòng 12m2"
+      payload: "/wood_floor12"
+    - title: "Sàn nhựa cuộn cho phòng 12m2"
+      payload: "/carpet_floor12"
+    - title: "Miếng dán tường cho phòng 12m2"
+      payload: "/wall_sticker"
+    - title: "Giấy dán tường 10m cho phòng 12m2"
+      payload: "/wallpaper12"
+    - title: "Nước sơn cho phòng 12m2"
+      payload: "/paint"
+
+  
+  utter_wood_floor12:
+  - text: "Kích thước 91.4cmx15.2cm mỗi tấm, 1m2 = 7 tấm, khách nên mua 91 tấm, shop đã trừ hao luôn lỗi khi thi công cho khách"
+    image: "https://hthsaigon.com/wp-content/uploads/2022/05/san-nhua-tu-dinh-w36-300x300.jpg"
+    
+  utter_carpet_floor12:
+  - text: "Kích thước 1mx10m, khách nên mua 1,5 cuộn, sẵn tiện trừ hao khi bị lỗi"
+    image: "https://sango.us/sites/default/files/u10/mau-san-nhua-cuon.jpg"
+
+  # utter_wall_sticker12:
+  # - text: "Kích thước mỗi tấm: 70cmx77cm = 0,54m2. Đo diện tích bề mặt tường cần dán rồi chia cho 0,54 rồi cộng thêm 1-2 tấm là ra số tấm xốp cần mua"
+  #   image: "https://xopdantuongnnd.com/wp-content/uploads/2017/08/dan-lan-luot-cac-tam-xop-dan-tuong.jpg"
+
+  utter_wallpaper12:
+  - text: "Kích thước mỗi cuộn: 45cmx10m = 4,5m2. Đo diện tích bề mặt tường cần dán rồi chia cho 4,5. vd:Phòng 12m2 rộng 3m&4m và cao 4m thì diện tích là 56m2/4.5=12,4 thì mua 13 cuộn"
+    image: "https://xopdantuongnnd.com/wp-content/uploads/2017/08/dan-lan-luot-cac-tam-xop-dan-tuong.jpg"
+
+  # utter_paint12:
+  # - text: "Nếu ở trọ nên sơn 2 lớp sơn mịn là được, còn phòng ở nhà thì nên 1 lớp sơn lót, 2 lớp sơn mịn"
+
+  utter_cat_size_15:
+  - text: "Chọn loại"
+    buttons:
+    - title: "Miếng dán sàn giả gỗ cho phòng 15m2"
+      payload: "/wood_floor15"
+    - title: "Sàn nhựa cuộn cho phòng 15m2"
+      payload: "/carpet_floor15"
+    - title: "Miếng dán tường cho phòng 15m2"
+      payload: "/wall_sticker"
+    - title: "Giấy dán tường 10m cho phòng 15m2"
+      payload: "/wallpaper15"
+    - title: "Nước sơn cho phòng 15m2"
+      payload: "/paint"
+
+  utter_wood_floor15:
+  - text: "Kích thước 91.4cmx15.2cm mỗi tấm, 1m2 = 7 tấm, khách nên mua 112 tấm, shop đã trừ hao luôn lỗi khi thi công cho khách"
+    image: "https://hthsaigon.com/wp-content/uploads/2022/05/san-nhua-tu-dinh-w36-300x300.jpg"
+  
+  utter_carpet_floor15:
+  - text: "Kích thước 1mx10m, khách nên mua 2 cuộn, sẵn tiện trừ hao khi bị lỗi"
+    image: "https://sango.us/sites/default/files/u10/mau-san-nhua-cuon.jpg"
+
+  # utter_wall_sticker15:
+  # - text: "Kích thước mỗi tấm: 70cmx77cm = 0,54m2. Đo diện tích bề mặt tường cần dán rồi chia cho 0,54 rồi cộng thêm 1-2 tấm là ra số tấm xốp cần mua"
+  #   image: "https://xopdantuongnnd.com/wp-content/uploads/2017/08/dan-lan-luot-cac-tam-xop-dan-tuong.jpg"
+
+  utter_wallpaper15:
+  - text: "Kích thước mỗi cuộn: 45cmx10m = 4,5m2. Đo diện tích bề mặt tường cần dán rồi chia cho 4,5. vd:Phòng 15m2 rộng 3m&5m và cao 4m thì diện tích là 64m2/4.5=14,2 thì mua 15 cuộn"
+    image: "https://xopdantuongnnd.com/wp-content/uploads/2017/08/dan-lan-luot-cac-tam-xop-dan-tuong.jpg"
+
+  # utter_paint15:
+  # - text: "Nếu ở trọ nên sơn 2 lớp sơn mịn là được, còn phòng ở nhà thì nên 1 lớp sơn lót, 2 lớp sơn mịn"
+
+  utter_cat_size_16:
+  - text: "Chọn loại"
+    buttons:
+    - title: "Miếng dán sàn giả gỗ cho phòng 16m2"
+      payload: "/wood_floor16"
+    - title: "Sàn nhựa cuộn cho phòng 16m2"
+      payload: "/carpet_floor16"
+    - title: "Miếng dán tường cho phòng 16m2"
+      payload: "/wall_sticker"
+    - title: "Giấy dán tường 10m cho phòng 16m2"
+      payload: "/wallpaper16"
+    - title: "Nước sơn cho phòng 16m2"
+      payload: "/paint"
+
+  utter_wood_floor16:
+  - text: "Kích thước 91.4cmx15.2cm mỗi tấm, 1m2 = 7 tấm, khách nên mua 119 tấm, shop đã trừ hao luôn lỗi khi thi công cho khách"
+    image: "https://hthsaigon.com/wp-content/uploads/2022/05/san-nhua-tu-dinh-w36-300x300.jpg"
+    
+  utter_carpet_floor16:
+  - text: "Kích thước 1mx10m, khách nên mua 2 cuộn, sẵn tiện trừ hao khi bị lỗi"
+    image: "https://sango.us/sites/default/files/u10/mau-san-nhua-cuon.jpg"
+
+  # utter_wall_sticker16:
+  # - text: "Kích thước mỗi tấm: 70cmx77cm = 0,54m2. Đo diện tích bề mặt tường cần dán rồi chia cho 0,54 rồi cộng thêm 1-2 tấm là ra số tấm xốp cần mua"
+  #   image: "https://xopdantuongnnd.com/wp-content/uploads/2017/08/dan-lan-luot-cac-tam-xop-dan-tuong.jpg"
+
+  utter_wallpaper16:
+  - text: "Kích thước mỗi cuộn: 45cmx10m = 4,5m2. Đo diện tích bề mặt tường cần dán rồi chia cho 4,5. vd:Phòng 16m2 rộng 4m và cao 4m thì diện tích là 64m2/4.5=14,2 thì mua 15 cuộn"
+    image: "https://xopdantuongnnd.com/wp-content/uploads/2017/08/dan-lan-luot-cac-tam-xop-dan-tuong.jpg"
+  
+  # utter_paint16:
+  # - text: "Nếu ở trọ nên sơn 2 lớp sơn mịn là được, còn phòng ở nhà thì nên 1 lớp sơn lót, 2 lớp sơn mịn"
+
+  utter_cat_size_18:
+  - text: "Chọn loại"
+    buttons:
+    - title: "Miếng dán sàn giả gỗ cho phòng 18m2"
+      payload: "/wood_floor18"
+    - title: "Sàn nhựa cuộn cho phòng 18m2"
+      payload: "/carpet_floor18"
+    - title: "Miếng dán tường cho phòng 18m2"
+      payload: "/wall_sticker"
+    - title: "Giấy dán tường 10m cho phòng 18m2"
+      payload: "/wallpaper18"
+    - title: "Nước sơn cho phòng 18m2"
+      payload: "/paint"
+
+  utter_wood_floor18:
+  - text: "Kích thước 91.4cmx15.2cm mỗi tấm, 1m2 = 7 tấm, khách nên mua 133 tấm, shop đã trừ hao luôn lỗi khi thi công cho khách"
+    image: "https://hthsaigon.com/wp-content/uploads/2022/05/san-nhua-tu-dinh-w36-300x300.jpg"
+    
+  utter_carpet_floor18:
+  - text: "Kích thước 1mx10m, khách nên mua 2 cuộn, sẵn tiện trừ hao khi bị lỗi"
+    image: "https://sango.us/sites/default/files/u10/mau-san-nhua-cuon.jpg"
+
+  # utter_wall_sticker18:
+  # - text: "Kích thước mỗi tấm: 70cmx77cm = 0,54m2. Đo diện tích bề mặt tường cần dán rồi chia cho 0,54 rồi cộng thêm 1-2 tấm là ra số tấm xốp cần mua"
+  #   image: "https://xopdantuongnnd.com/wp-content/uploads/2017/08/dan-lan-luot-cac-tam-xop-dan-tuong.jpg"
+
+  utter_wallpaper18:
+  - text: "Kích thước mỗi cuộn: 45cmx10m = 4,5m2. Đo diện tích bề mặt tường cần dán rồi chia cho 4,5. vd:Phòng 18m2 rộng 3m&6m và cao 4m thì diện tích là 72m2/4.5=16 thì mua 16 cuộn"
+    image: "https://xopdantuongnnd.com/wp-content/uploads/2017/08/dan-lan-luot-cac-tam-xop-dan-tuong.jpg"
+  
+  # utter_paint18:
+  # - text: "Nếu ở trọ nên sơn 2 lớp sơn mịn là được, còn phòng ở nhà thì nên 1 lớp sơn lót, 2 lớp sơn mịn"
+
+  utter_cat_size_20:
+  - text: "Chọn loại"
+    buttons:
+    - title: "Miếng dán sàn giả gỗ cho phòng 20m2"
+      payload: "/wood_floor20"
+    - title: "Sàn nhựa cuộn cho phòng 20m2"
+      payload: "/carpet_floor20"
+    - title: "Miếng dán tường cho phòng 20m2"
+      payload: "/wall_sticker"
+    - title: "Giấy dán tường 10m cho phòng 20m2"
+      payload: "/wallpaper20"
+    - title: "Nước sơn cho phòng 20m2"
+      payload: "/paint"
+
+  utter_wood_floor20:
+  - text: "Kích thước 91.4cmX15.2cm mỗi tấm, 1m2 = 7 tấm, khách nên mua 147 tấm, shop đã trừ hao luôn lỗi khi thi công cho khách"
+    image: "https://hthsaigon.com/wp-content/uploads/2022/05/san-nhua-tu-dinh-w36-300x300.jpg"
+    
+  utter_carpet_floor20:
+  - text: "Kích thước 1mx10m, khách nên mua 2 cuộn thêm 1m, sẵn tiện trừ hao khi bị lỗi"
+    image: "https://sango.us/sites/default/files/u10/mau-san-nhua-cuon.jpg"
+
+  # utter_wall_sticker20:
+  # - text: "Kích thước mỗi tấm: 70cmx77cm = 0,54m2. Đo diện tích bề mặt tường cần dán rồi chia cho 0,54 rồi cộng thêm 1-2 tấm là ra số tấm xốp cần mua"
+  #   image: "https://xopdantuongnnd.com/wp-content/uploads/2017/08/dan-lan-luot-cac-tam-xop-dan-tuong.jpg"
+
+  utter_wallpaper20:
+  - text: "Kích thước mỗi cuộn: 45cmx10m = 4,5m2. Đo diện tích bề mặt tường cần dán rồi chia cho 4,5. vd:Phòng 20m2 rộng 4m&5m và cao 4m thì diện tích là 72m2/4.5=16 thì mua 16 cuộn"
+    image: "https://xopdantuongnnd.com/wp-content/uploads/2017/08/dan-lan-luot-cac-tam-xop-dan-tuong.jpg"
+  
+  # utter_paint20:
+  # - text: "Nếu ở trọ nên sơn 2 lớp sơn mịn là được, còn phòng ở nhà thì nên 1 lớp sơn lót, 2 lớp sơn mịn"
+
+  utter_cat_size_25:
+  - text: "Chọn loại"
+    buttons:
+    - title: "Miếng dán sàn giả gỗ cho phòng 25m2"
+      payload: "/wood_floor25"
+    - title: "Sàn nhựa cuộn cho phòng 25m2"
+      payload: "/carpet_floor25"
+    - title: "Miếng dán tường cho phòng 25m2"
+      payload: "/wall_sticker"
+    - title: "Giấy dán tường 10m cho phòng 25m2"
+      payload: "/wallpaper25"
+    - title: "Nước sơn cho phòng 25m2"
+      payload: "/paint"
+
+  utter_wood_floor25:
+  - text: "Kích thước 91.4cmx15.2cm mỗi tấm , 1m2 = 7 tấm, khách nên mua 182 tấm, shop đã trừ hao luôn lỗi khi thi công cho khách"
+    image: "https://hthsaigon.com/wp-content/uploads/2022/05/san-nhua-tu-dinh-w36-300x300.jpg"
+    
+  utter_carpet_floor25:
+  - text: "Kích thước 1mx10m, khách nên mua 2 cuộn thêm 1m, sẵn tiện trừ hao khi bị lỗi"
+    image: "https://sango.us/sites/default/files/u10/mau-san-nhua-cuon.jpg"
+
+  # utter_wall_sticker25:
+  # - text: "Kích thước mỗi tấm: 70cmx77cm = 0,54m2. Đo diện tích bề mặt tường cần dán rồi chia cho 0,54 rồi cộng thêm 1-2 tấm là ra số tấm xốp cần mua"
+  #   image: "https://xopdantuongnnd.com/wp-content/uploads/2017/08/dan-lan-luot-cac-tam-xop-dan-tuong.jpg"
+
+  utter_wallpaper25:
+  - text: "Kích thước mỗi cuộn: 45cmx10m = 4,5m2. Đo diện tích bề mặt tường cần dán rồi chia cho 4,5. vd:Phòng 25m2 rộng 5m và cao 4m thì diện tích là 72m2/4.5=17,7 thì mua 18 cuộn"
+    image: "https://xopdantuongnnd.com/wp-content/uploads/2017/08/dan-lan-luot-cac-tam-xop-dan-tuong.jpg"
+  
+  # utter_paint25:
+  # - text: "Nếu ở trọ nên sơn 2 lớp sơn mịn là được, còn phòng ở nhà thì nên 1 lớp sơn lót, 2 lớp sơn mịn"
+
+  utter_room_size_orther:
+  - text: "Chọn loại"
+    buttons: 
+    - title: "Dán sàn giả gỗ"
+      payload: "/wood_floor"
+    - title: "Sàn nhựa cuộn"
+      payload: "/carpet_floor"
+    - title: "Miếng dán tường"
+      payload: "/wall_sticker"
+    - title: "Giấy dán tường"
+      payload: "/wallpaper"
+    - title: "Nước sơn"
+      payload: "/paint"
+      
+  utter_wood_floor:
+  - text: "Kích thước 91.4cmx15.2cm mỗi tấm, Cách tính ra số tấm: bạn lấy (chiều ngang x chiều rộng) x 7.2 = số tấm cần dùng cho diện tích nhà mình"
+    image: "https://hthsaigon.com/wp-content/uploads/2022/05/san-nhua-tu-dinh-w36-300x300.jpg"
+    
+  utter_carpet_floor:
+  - text: "Kích thước 1mx10m, Tổng diện tích = diện tích phòng + 3m để trừ hao khi bị lỗi"
+    image: "https://sango.us/sites/default/files/u10/mau-san-nhua-cuon.jpg"
+
+  utter_wall_sticker:
+  - text: "Kích thước mỗi tấm: 70cmx77cm = 0,54m2. Số tấm = Diện tích cần dán / 0,54 + 2 tấm để trừ hao khi bị lỗi"
+    image: "https://xopdantuongnnd.com/wp-content/uploads/2017/08/dan-lan-luot-cac-tam-xop-dan-tuong.jpg"
+
+  utter_wallpaper:
+  - text: "Kích thước mỗi cuộn: 45cmx10m = 4,5m2. Đo diện tích bề mặt tường cần dán rồi chia cho 4,5. vd:Phòng 9m2 rộng 3m2 cao 4m thì diện tích là 48m2/4.5=10,6 thì mua 11 cuộn"
+    image: "https://xopdantuongnnd.com/wp-content/uploads/2017/08/dan-lan-luot-cac-tam-xop-dan-tuong.jpg"
+
+  utter_paint:
+  - text: "Các bước sơn phòng: bột->sơn lót->sơn mịn hoặc bóng. Khách lấy keo dính dán lên tường nếu tróc thì dùng sơn lót không tróc thì chỉ dùng sơn mịn. 1 thùng sơn 5 lít sẽ sơn được khoảng 30m2 nếu sơn 02 lớp đối với loại sơn lót và sơn mịn 5 lít sẽ sơn được 25m2 với 02 lớp"
+
+  utter_paint_other:
+  - text: "Nếu ở trọ nên sơn 2 lớp sơn mịn là được, còn phòng ở nhà thì nên 1 lớp sơn lót, 2 lớp sơn mịn"
+
+  utter_fengshui_color:
+  - text: "Bạn mệnh gì"
+    buttons:
+    - title: "Kim"
+      payload: "/fengshui_metal"
+    - title: "Mộc"
+      payload: "/fengshui_carpentry"
+    - title: "Thủy"
+      payload: "/fengshui_water"
+    - title: "Hỏa"
+      payload: "/fengshui_fire"
+    - title: "Thổ"
+      payload: "/fengshui_earth"
+
+  utter_fengshui_metal:
+  - text: "Xem bài về mệnh kim [ ] {link}"
+
+  utter_fengshui_earth:
+  - text: "Xem bài về mệnh thổ [ ] {link}"
+
+  utter_fengshui_water:
+  - text: "Xem bài về mệnh thủy [ ] {link}"
+
+  utter_fengshui_carpentry:
+  - text: "Xem bài về mệnh mộc [ ] {link}"
+
+  utter_fengshui_fire:
+  - text: "Xem bài về mệnh hỏa [ ] {link}"
+
+  utter_tip_decor:
+  - text: "Mẹo cho"
+    buttons:
+    - title: "Dán sàn không lệch"
+      payload: "/tip_wood_floor"
+    - title: "Sàn nhựa cuộn với keo"
+      payload: "/tip_carpet_floor"
+    - title: "Miếng dán tường không lệch"
+      payload: "/tip_wall_sticker"
+    - title: "Giấy dán tường không phồng"
+      payload: "/tip_wallpaper"
+    - title: "Ánh sáng cho phòng"
+      payload: "/tip_light"
+
+  utter_tip_wood_floor:
+  - text: "Kinh nghiệm dán sàn [ ] {link}"
+
+  utter_tip_carpet_floor:
+  - text: "Cách thi công sàn cuộn [ ] {link}"
+  
+  utter_tip_wall_sticker:
+  - text: "Hướng dẫn dán tường [ ] {link}"
+
+  utter_tip_wallpaper:
+  - text: "Chia sẻ mẹo dán tường [ ] {link}"
+  
+  utter_tip_light:
+  - text: "Cách đi ánh sáng cho phòng [ ] {link}"
+
+  utter_love_decor1:
+  - text: "NGHIỆN DECOR {link}"
+  utter_love_decor2:
+  - text: "MÊ NHÀ ĐẸP {link}"
+  utter_love_decor3:
+  - text: "Yêu decor {link}"
+    
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+actions:
+- utter_greet
+- utter_out_of_scope
+- utter_praise
+- utter_cat
+- utter_room_size
+- utter_thankyou
+- utter_ship
+- utter_address
+- utter_decry
+- utter_goodbye
+- utter_product
+- utter_paint
+- utter_cat_size_9
+- utter_wood_floor9
+- utter_carpet_floor9
+- utter_wallpaper9
+- utter_cat_size_12
+- utter_wood_floor12
+- utter_carpet_floor12
+- utter_wallpaper12
+- utter_cat_size_15
+- utter_wood_floor15
+- utter_carpet_floor15
+- utter_wallpaper15
+- utter_cat_size_18
+- utter_wood_floor18
+- utter_carpet_floor18
+- utter_wallpaper18
+- utter_cat_size_20
+- utter_wood_floor20
+- utter_carpet_floor20
+- utter_wallpaper20
+- utter_cat_size_25
+- utter_wood_floor25
+- utter_carpet_floor25
+- utter_wallpaper25
+- utter_cat_size
+- utter_wood_floor
+- utter_carpet_floor
+- utter_wall_sticker
+- utter_wallpaper
+- utter_paint_other
+- utter_fengshui_metal
+- utter_fengshui_earth
+- utter_fengshui_water
+- utter_fengshui_carpentry
+- utter_fengshui_fire
+- action_fengshui_metal
+- action_fengshui_earth
+- action_fengshui_water
+- action_fengshui_carpentry
+- action_fengshui_fire
+- utter_tip_decor
+- utter_tip_wood_floor
+- utter_tip_carpet_floor
+- utter_tip_wall_sticker
+- utter_tip_wallpaper
+- utter_tip_light
+- action_tip_wood_floor
+- action_tip_carpet_floor
+- action_tip_wall_sticker
+- action_tip_wallpaper
+- action_tip_light
+- utter_love_decor
+- utter_love_decor1
+- utter_love_decor2
+- utter_love_decor3
+- action_love_decor1
+- action_love_decor2
+- action_love_decor3
+- utter_custom
+# - action_custom_fallback
